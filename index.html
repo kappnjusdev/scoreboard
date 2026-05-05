@@ -1,29 +1,66 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="team-wrapper">
-                <h3 class="team">HOME</h3>
-                <div class="points" id="homeScore">0</div>
-                <div class="add-points-section">
-                    <button class="add-points" id="add1HomePoints" onclick="add1PointsToHome()">+1</button>
-                    <button class="add-points" id="add2HomePoins" onclick="add2PointsToHome()">+2</button>
-                    <button class="add-points" id="add3HomePoints" onclick="add3PointsToHome()">+3</button>
-                </div>
-            </div>
-            <div class="team-wrapper">
-                <h3 class="team">GUEST</h3>
-                <div class="points" id="guestScore">0</div>
-                <div class="add-points-section">
-                    <button class="add-points" id="add1GuestPoints" onclick="add1PointsToGuest()">+1</button>
-                    <button class="add-points" id="add2GuestPoints" onclick="add2PointsToGuest()">+2</button>
-                    <button class="add-points" id="add3GuestPoints" onclick="add3PointsToGuest()">+3</button>
-                </div>
-            </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="team-wrapper">
+        <h3 class="team">HOME</h3>
+        <div class="points" id="homeScore">0</div>
+        <div class="add-points-section">
+          <button
+            class="add-points"
+            id="add1HomePoints"
+            onclick="add1PointsToHome()"
+          >
+            +1
+          </button>
+          <button
+            class="add-points"
+            id="add2HomePoins"
+            onclick="add2PointsToHome()"
+          >
+            +2
+          </button>
+          <button
+            class="add-points"
+            id="add3HomePoints"
+            onclick="add3PointsToHome()"
+          >
+            +3
+          </button>
         </div>
-        <button id="btn-newGame" onclick="newGame()">New Game</button>
-        <script src="index.js"></script>
-    </body>
+      </div>
+      <div class="team-wrapper">
+        <h3 class="team">GUEST</h3>
+        <div class="points" id="guestScore">0</div>
+        <div class="add-points-section">
+          <button
+            class="add-points"
+            id="add1GuestPoints"
+            onclick="add1PointsToGuest()"
+          >
+            +1
+          </button>
+          <button
+            class="add-points"
+            id="add2GuestPoints"
+            onclick="add2PointsToGuest()"
+          >
+            +2
+          </button>
+          <button
+            class="add-points"
+            id="add3GuestPoints"
+            onclick="add3PointsToGuest()"
+          >
+            +3
+          </button>
+        </div>
+      </div>
+    </div>
+    <button id="btn-newGame" onclick="newGame()">New Game</button>
+    <script src="index.js"></script>
+  </body>
 </html>
